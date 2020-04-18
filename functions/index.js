@@ -8,5 +8,4 @@ const functions = require('firebase-functions');
 exports.login = functions.https.onRequest((Request,Response) => {
     console.log("Login Request with Creds : ");
     console.log(JSON.stringify(Request.body))
-    //console.log(Request.body.mail+" : "+Request.body.password)
 });
